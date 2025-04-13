@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensualidad Universitaria</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <section class="container">
+        <h2>Registro de Mensualidad</h2>
+        <form action="mensualidad.php" method="post">
+            <label for="nombre">Nombre del Alumno:</label><br>
+            <input type="text" name="nombre" id="nombre" required><br><br>
+
+            <label for="carrera">Carrera:</label><br>
+            <select name="carrera" id="carrera" required>
+                <option value="">Seleccione una carrera</option>
+                <option value="ingenieria">Ingeniería</option>
+                <option value="medicina">Medicina</option>
+                <option value="derecho">Derecho</option>
+                <option value="arquitectura">Arquitectura</option>
+                <option value="educacion">Educación</option>
+            </select><br><br>
+
+            <label for="promedio">Promedio de Notas:</label><br>
+            <input type="number" step="0.01" name="promedio" id="promedio" min="0" max="20" required><br><br>
+
+            <input type="submit" value="Calcular Mensualidad">
+            <input type="reset" value="Limpiar">
+        </form>
+    </section>
+</body>
+</html>
