@@ -1,0 +1,87 @@
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff4757;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff4757;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="reset"] {
+    background-color: #2f3542;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
+
+.error {
+    color: #ff6b81;
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+
+.resultado-cine {
+    background-color: #1e1e1e;
+    border: 2px solid #ff4757;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 71, 87, 0.6);
+    max-width: 500px;
+    text-align: center;
+}
+
+.resultado-cine h2 {
+    color: #ff4757;
+    margin-bottom: 20px;
+}
+
+.resultado-cine p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}

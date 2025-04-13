@@ -10,14 +10,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validar nombre solo letras
     if (!preg_match("/^[a-zA-Z\s]+$/", $nombre)) {
         $errores = true;
-        header("Location: index.html?errorNombre=El nombre solo debe contener letras.");
+        header("Location: index.php?errorNombre=El nombre solo debe contener letras.");
         exit();
     }
 
     // Validar edad
     if (!is_numeric($edad) || $edad < 0) {
         $errores = true;
-        header("Location: index.html?errorEdad=Edad inválida.");
+        header("Location: index.php?errorEdad=Edad inválida.");
         exit();
     }
 
